@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinaryExpressionEvaluator
+namespace BooleanExpressionEvaluator
 {
+	//parser class
     class ParseExpression
     {
         private StringReader _reader;
@@ -67,10 +68,13 @@ namespace BinaryExpressionEvaluator
                         {
                             var variable = parseVariables();
                             variables.Add(variable);
+                            keys.Add(new VariablesToken(variable));
                         }
                         else if(char.IsNumber(c))
                         {
-                            _reader.Read();
+                            var number = parseNumbers();
+                            Console.WriteLine($"Parsed Integer {0}");
+                            keys.Add(new NumberToken(number));
                         }
                         else
                         {
@@ -94,6 +98,20 @@ namespace BinaryExpressionEvaluator
 
             //Console.WriteLine($"PotentialVariable : {potentialVariable}");
             return potentialVariable;
+        }
+
+        private string parseNumbers()
+        {
+            var text = new StringBuilder();
+            while (Char.IsNumber((char)_reader.Peek()))
+            {
+                text.Append((char)_reader.Read());
+            }
+
+            var potentialNumber = text.ToString().ToLower();
+
+            //Console.WriteLine($"PotentialVariable : {potentialVariable}");
+            return potentialNumber;
         }
     }
 }
