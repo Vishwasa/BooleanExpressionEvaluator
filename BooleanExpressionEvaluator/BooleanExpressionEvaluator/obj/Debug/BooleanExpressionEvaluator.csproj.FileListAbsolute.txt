@@ -1,0 +1,6 @@
+C:\Users\Vishwas\source\BEE\BooleanExpressionEvaluator\BooleanExpressionEvaluator\obj\Debug\BooleanExpressionEvaluator.csprojAssemblyReference.cache
+C:\Users\Vishwas\source\BEE\BooleanExpressionEvaluator\BooleanExpressionEvaluator\bin\Debug\BooleanExpressionEvaluator.exe.config
+C:\Users\Vishwas\source\BEE\BooleanExpressionEvaluator\BooleanExpressionEvaluator\bin\Debug\BooleanExpressionEvaluator.exe
+C:\Users\Vishwas\source\BEE\BooleanExpressionEvaluator\BooleanExpressionEvaluator\bin\Debug\BooleanExpressionEvaluator.pdb
+C:\Users\Vishwas\source\BEE\BooleanExpressionEvaluator\BooleanExpressionEvaluator\obj\Debug\BooleanExpressionEvaluator.exe
+C:\Users\Vishwas\source\BEE\BooleanExpressionEvaluator\BooleanExpressionEvaluator\obj\Debug\BooleanExpressionEvaluator.pdb
