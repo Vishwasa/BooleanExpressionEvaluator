@@ -23,6 +23,12 @@ namespace BooleanExpressionEvaluator
             var variables = new List<string>();
             while (_reader.Peek() != -1)
             {
+				 while (Char.IsWhiteSpace((char)_reader.Peek()))
+                {
+                    _reader.Read();
+                }
+                if (_reader.Peek() == -1)
+                    break;
                 var c = (char)_reader.Peek();
                 switch (c)
                 {
